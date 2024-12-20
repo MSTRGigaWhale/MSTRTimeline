@@ -3,13 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Timeline</title>
+  <title>MSTR Timeline</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Sidebar Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#completed">Completed Events</a></li>
+      <li><a href="#upcoming">Upcoming Events</a></li>
+      <li><a href="#notes">Convertible Notes</a></li>
+      <li><a href="#graphs">Graphs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Tracker Header -->
+  <div id="tracker-header">
+    <img src="images/MSTRLogo.png" alt="MSTR Tracker Logo" id="tracker-logo">
+    <h1>MSTR Tracker</h1>
+  </div>
+
+  <!-- Main Header -->
   <header>
-    <h1>MSTR Catalyst Timeline</h1>
+    <div id="header-content">
+      <img src="images/MSTRLogo.png" alt="Timeline Logo" id="header-logo">
+      <h1>$MSTR Timeline</h1>
+    </div>
   </header>
+
+  <!-- Timeline Section -->
   <div id="timeline">
     <h1>Interactive Timeline</h1>
     <div class="event" data-info="Details about Event 1">
@@ -21,6 +43,5 @@
       <h2>FTX Repayments</h2>
     </div>
   </div>
-  <script src="js/script.js"></script>
 </body>
 </html>
