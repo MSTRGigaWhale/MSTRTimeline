@@ -158,6 +158,13 @@ header h1 {
     color: #eee;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 45%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Timeline Content */
+.timeline-content:hover {
+    background: #333; /* Lighter shade of gray on hover */
+    cursor: pointer;
 }
 
 /* Alternate Content Alignment */
