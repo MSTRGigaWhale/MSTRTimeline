@@ -138,20 +138,20 @@ header h1 {
 }
 
 /* Vertical Line */
-.timeline-item:after {
+.timeline-item:before {
     content: '';
     position: absolute;
     left: 50%; /* Center the line */
-    top: 20px; /* Start below the dot */
+    top: 0;
     width: 3px;
-    height: calc(100% + 20px); /* Extend past the dot */
+    height: 100%; /* Extend fully through the item */
     background-color: #007BFF;
     transform: translateX(-50%); /* Center the line */
     z-index: 0;
 }
 
 /* Remove Line for Last Item */
-.timeline-item:last-child:after {
+.timeline-item:last-child:before {
     display: none;
 }
 
@@ -170,14 +170,14 @@ header h1 {
 .timeline-item:nth-child(odd) .timeline-content {
     float: left;
     text-align: right;
-    margin-right: calc(50% + 10px);
+    margin-right: calc(50% + 20px);
     clear: both;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
     float: right;
     text-align: left;
-    margin-left: calc(50% + 10px);
+    margin-left: calc(50% + 20px);
     clear: both;
 }
 
@@ -200,4 +200,11 @@ header h1 {
     font-weight: bold;
     color: #AAA; /* Muted color for dates */
     margin-bottom: 10px;
+}
+
+/* Clearfix for Floating Content */
+.timeline-item:after {
+    content: "";
+    display: table;
+    clear: both;
 }
