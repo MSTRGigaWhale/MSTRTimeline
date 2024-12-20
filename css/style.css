@@ -116,28 +116,46 @@ header h1 {
     padding: 20px;
 }
 
-/* Timeline Item Styling */
+/* Timeline Item */
 .timeline-item {
-    display: flex;
-    flex-direction: row;
+    position: relative;
     margin-bottom: 40px;
+    padding-left: 40px; /* Space for the timeline dots and line */
 }
 
-/* Timeline Date */
-.timeline-date {
-    flex: 0 0 150px; /* Fixed width for dates */
-    text-align: right;
-    padding-right: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #007BFF;
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Vertical Line */
+.timeline-item:after {
+    content: '';
+    position: absolute;
+    left: 24px; /* Align with the center of the dot */
+    top: 20px; /* Start below the dot */
+    width: 3px;
+    height: calc(100% + 20px); /* Extend past the dot */
+    background-color: #007BFF;
+    z-index: 0;
+}
+
+/* Remove Line for Last Item */
+.timeline-item:last-child:after {
+    display: none;
 }
 
 /* Timeline Content */
 .timeline-content {
-    flex: 1;
-    padding: 10px 20px;
     background: #222;
+    padding: 15px;
     border-radius: 10px;
     color: #eee;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -156,13 +174,9 @@ header h1 {
     color: #aaa;
 }
 
-/* Alternating Alignment for Date and Content */
-.timeline-item:nth-child(odd) .timeline-date {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 0;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    margin-left: auto;
+/* Timeline Date */
+.timeline-date {
+    font-weight: bold;
+    color: #AAA; /* Muted color for dates */
+    margin-bottom: 10px;
 }
