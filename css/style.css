@@ -1,30 +1,48 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #eee;
+    background-color: #111; /* Dark background for contrast */
+    color: #eee; /* Light text color for readability */
   }
   
+  /* Header Styling */
+  header {
+    background-color: #007BFF; /* Header background color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0056b3; /* Optional: Add a border for emphasis */
+  }
+  
+  header h1 {
+    color: #fff; /* White text color */
+    font-size: 2.5em; /* Large font size */
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Clean font */
+  }
+  
+  /* Timeline Container Styling */
   #timeline {
     max-width: 600px;
     margin: auto;
     padding: 20px;
   }
   
+  /* Event Styling */
   .event {
     margin: 20px 0;
     padding: 15px;
-    border-left: 3px solid #007BFF;
+    border-left: 3px solid #007BFF; /* Vertical line on the left */
     cursor: pointer;
   }
   
   .event:hover {
-    background-color: #222;
+    background-color: #222; /* Darker background on hover */
   }
   
   .event .date {
     font-weight: bold;
-    color: #AAA;
+    color: #AAA; /* Muted color for dates */
   }
   
