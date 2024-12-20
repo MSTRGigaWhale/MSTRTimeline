@@ -114,24 +114,26 @@ header h1 {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    position: relative;
 }
 
 /* Timeline Item */
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
-    padding-left: 40px; /* Space for the timeline dots and line */
+    text-align: left; /* Default alignment */
 }
 
-/* Timeline Dot */
+/* Center the Line and Dots */
 .timeline-dot {
     position: absolute;
-    left: 15px;
+    left: 50%; /* Center the dot */
     top: 0;
     width: 20px;
     height: 20px;
     background-color: #007BFF;
     border-radius: 50%;
+    transform: translateX(-50%); /* Center the dot */
     z-index: 1;
 }
 
@@ -139,11 +141,12 @@ header h1 {
 .timeline-item:after {
     content: '';
     position: absolute;
-    left: 24px; /* Align with the center of the dot */
+    left: 50%; /* Center the line */
     top: 20px; /* Start below the dot */
     width: 3px;
     height: calc(100% + 20px); /* Extend past the dot */
     background-color: #007BFF;
+    transform: translateX(-50%); /* Center the line */
     z-index: 0;
 }
 
@@ -154,13 +157,31 @@ header h1 {
 
 /* Timeline Content */
 .timeline-content {
+    position: relative;
     background: #222;
     padding: 15px;
     border-radius: 10px;
     color: #eee;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
 }
 
+/* Alternate Content Alignment */
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+    text-align: right;
+    margin-right: calc(50% + 10px);
+    clear: both;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    text-align: left;
+    margin-left: calc(50% + 10px);
+    clear: both;
+}
+
+/* Timeline Content Headings and Text */
 .timeline-content h3 {
     margin: 0 0 10px;
     font-size: 1.5em;
