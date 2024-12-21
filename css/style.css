@@ -53,13 +53,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 nav ul li a:hover {
@@ -117,7 +117,7 @@ header h1 {
 /* Timeline Container Styling */
 #timeline {
     max-width: 800px;
-    margin: 0px auto;
+    margin: 20px auto;
     padding: 20px;
     position: relative;
 }
