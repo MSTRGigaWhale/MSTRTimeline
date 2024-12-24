@@ -98,7 +98,7 @@ header {
     z-index: 10; /* Ensures it stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
-    padding: 10px 20px; /* Padding around the content */
+    padding: 20px; /* Padding around the content */
     box-sizing: border-box; /* Includes padding in width/height calculation */
     display: flex; /* Enables flexbox layout */
     justify-content: space-between; /* Aligns title to the left and links to the right */
