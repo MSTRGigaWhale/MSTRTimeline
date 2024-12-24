@@ -93,8 +93,8 @@ nav ul li a:hover {
 header {
     position: fixed; /* Keep the header fixed at the top */
     top: 0;
-    left: 300px; /* Align the header to start after the sidebar */
-    width: calc(100% - 300px); /* Adjust the header width to fill the remaining space */
+    left: 250px; /* Align the header to start after the sidebar */
+    width: calc(100% - 250px); /* Adjust the header width to fill the remaining space */
     z-index: 10; /* Ensure it stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
