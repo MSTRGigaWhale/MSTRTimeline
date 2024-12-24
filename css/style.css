@@ -91,18 +91,22 @@ nav ul li a:hover {
 
 /* Main Header */
 header {
-    position: fixed; /* Make header fixed */
+    position: fixed; /* Keep the header fixed at the top */
     top: 0;
-    left: 250px; /* Add margin to align with the sidebar */
-    width: calc(100% - 250px); /* Adjust width to avoid overlapping the sidebar */
-    z-index: 10; /* Ensure header stays above other elements */
+    left: 250px; /* Align the header to start after the sidebar */
+    width: calc(100% - 250px); /* Adjust the header width to fill the remaining space */
+    z-index: 10; /* Ensure it stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Align the header content to the left */
     border-bottom: 5px solid #D9232E;
-    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    display: flex; /* Use flexbox for proper alignment of elements */
+    justify-content: space-between; /* Space out the content (title and links) */
+    align-items: center; /* Align content vertically */
 }
+
 
 /* Header Content (Centered) */
 #header-content {
