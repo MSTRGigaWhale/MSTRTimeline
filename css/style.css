@@ -91,11 +91,19 @@ nav ul li a:hover {
 
 /* Main Header */
 header {
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    left: 250px; /* Starts the header right after the sidebar */
+    width: calc(100% - 250px); /* Dynamically adjusts to the remaining space */
+    z-index: 10; /* Ensures it stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 3px solid #D9232E;
+    padding: 10px 20px; /* Padding around the content */
+    box-sizing: border-box; /* Includes padding in width/height calculation */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Aligns title to the left and links to the right */
+    align-items: center; /* Centers content vertically */
+    border-bottom: 5px solid #D9232E; /* Ensures border is flush with the bottom */
 }
 
 
