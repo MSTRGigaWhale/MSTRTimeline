@@ -19,7 +19,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 250px;
     height: 100%;
     background-color: #1e1e1e;
     color: #fff;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 header {
     position: fixed; /* Keeps the header fixed at the top */
     top: 0;
-    left: 300px; /* Starts the header right after the sidebar */
+    left: 0px; /* Starts the header right after the sidebar */
     width: calc(100% - 250px); /* Dynamically adjusts to the remaining space */
     z-index: 10; /* Ensures it stays above other elements */
     background-color: #1e1e1e;
