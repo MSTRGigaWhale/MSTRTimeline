@@ -99,16 +99,18 @@ header {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Add space between logo/title and links */
+    justify-content: space-between; /* Add space between the title and links */
     align-items: center;
     border-bottom: 5px solid #D9232E;
 }
 
+/* Header Content (Left Side) */
 #header-content {
     display: flex;
     align-items: center;
 }
 
+/* Header Logo */
 #header-logo {
     width: 50px;
     height: 50px;
@@ -120,10 +122,10 @@ header h1 {
     margin: 0;
 }
 
-/* Header Links */
+/* Header Links (Right Side) */
 #header-links {
     display: flex;
-    gap: 15px; /* Space between the links */
+    gap: 15px; /* Space between links */
 }
 
 #header-links a {
