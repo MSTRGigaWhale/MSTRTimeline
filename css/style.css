@@ -99,7 +99,7 @@ header {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Add space between the title and links */
+    justify-content: space-between; /* Separate the title and links */
     align-items: center;
     border-bottom: 5px solid #D9232E;
 }
@@ -117,6 +117,7 @@ header {
     margin-right: 15px;
 }
 
+/* Header Title */
 header h1 {
     font-size: 2.5em;
     margin: 0;
@@ -126,6 +127,7 @@ header h1 {
 #header-links {
     display: flex;
     gap: 15px; /* Space between links */
+    justify-content: flex-end;
 }
 
 #header-links a {
