@@ -6,6 +6,7 @@ body {
     background-color: #111; /* Dark background for contrast */
     color: #eee; /* Light text color for readability */
     margin-left: 250px; /* Leave space for the fixed sidebar */
+    margin-top: 90px; /* Adjust for the fixed header */
 }
 
 /* Smooth Scrolling */
@@ -90,6 +91,10 @@ nav ul li a:hover {
 
 /* Main Header */
 header {
+    position: fixed; /* Make header fixed */
+    top: 0;
+    width: calc(100% - 250px); /* Adjust width for the sidebar */
+    z-index: 10; /* Ensure header stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
