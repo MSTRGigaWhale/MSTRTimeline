@@ -158,6 +158,8 @@ header h1 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    border: 1px;
+    border-color: #D9232E;
     position: relative;
 }
 
@@ -177,8 +179,6 @@ header h1 {
 /* Timeline Item */
 .timeline-item {
     position: relative;
-    border: 1px;
-    border-color: #D9232E;
     margin-bottom: 40px;
 }
 
