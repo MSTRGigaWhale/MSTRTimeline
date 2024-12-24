@@ -99,15 +99,18 @@ header {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Separate the title and links */
+    justify-content: space-between; /* Distribute space between title and links */
     align-items: center;
     border-bottom: 5px solid #D9232E;
 }
 
-/* Header Content (Left Side) */
+/* Header Content (Centered) */
 #header-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Allow this to expand and center the title */
+    text-align: center; /* Center-align the text */
 }
 
 /* Header Logo */
@@ -123,11 +126,12 @@ header h1 {
     margin: 0;
 }
 
-/* Header Links (Right Side) */
+/* Header Links (Right-aligned) */
 #header-links {
     display: flex;
     gap: 15px; /* Space between links */
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align to the right */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 #header-links a {
