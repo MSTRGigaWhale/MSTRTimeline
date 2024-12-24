@@ -98,7 +98,7 @@ header {
     z-index: 10; /* Ensure it stays above other elements */
     background-color: #1e1e1e;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: left; /* Align the header content to the left */
     border-bottom: 5px solid #D9232E;
     box-sizing: border-box; /* Ensure padding is included in the width */
@@ -178,6 +178,8 @@ header h1 {
 /* Timeline Item */
 .timeline-item {
     position: relative;
+    border: 1px;
+    border-color: #D9232E;
     margin-bottom: 40px;
 }
 
