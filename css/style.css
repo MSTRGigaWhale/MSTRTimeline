@@ -133,7 +133,7 @@ header h1 {
 #header-links {
     display: flex;
     gap: 15px; /* Add spacing between links */
-    margin-right: 20px; /* Add space between links and the edge */
+    margin-right: 50px; /* Add space between links and the edge */
     justify-content: flex-end; /* Ensure links are aligned to the right */
     align-items: center; /* Vertically align links with the header content */
     white-space: nowrap; /* Prevent text from wrapping */
