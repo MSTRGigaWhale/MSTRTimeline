@@ -132,10 +132,13 @@ header h1 {
 /* Header Links (Right-aligned) */
 #header-links {
     display: flex;
-    gap: 15px; /* Space between links */
-    justify-content: flex-end; /* Align to the right */
-    flex-shrink: 0; /* Prevent shrinking */
+    gap: 15px; /* Add spacing between links */
+    margin-right: 20px; /* Add space between links and the edge */
+    justify-content: flex-end; /* Ensure links are aligned to the right */
+    align-items: center; /* Vertically align links with the header content */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
+
 
 #header-links a {
     color: #fff;
