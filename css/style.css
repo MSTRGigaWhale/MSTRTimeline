@@ -149,7 +149,7 @@ header {
     font-size: 1.5em;
     margin: 0;
     flex-grow: 1; /* Allow title to expand and stay centered */
-    text-align: center; /* Center-align the text within */
+    text-align: left; /* Left-align the text within */
 }
 
 /* Header Links */
