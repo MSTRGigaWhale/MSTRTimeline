@@ -183,20 +183,6 @@ header h1 {
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
-/* Back to Timeline Link */
-#back-to-timeline {
-    color: #D9232E; /* Highlighted link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1em; /* Adjust font size */
-    margin-bottom: 20px; /* Add space below the link */
-    display: inline-block; /* Make the link behave like a button */
-}
-
-#back-to-timeline:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #fff; /* Hover color */
-}
-
 #header-links a {
     color: #fff;
     text-decoration: none;
