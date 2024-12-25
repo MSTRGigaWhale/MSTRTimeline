@@ -245,7 +245,7 @@ header h1 {
 .timeline-dot {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 50px;
     width: 23px;
     height: 23px;
     background-color: #D9232E;
