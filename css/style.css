@@ -145,13 +145,20 @@ header {
 }
 
 
-/* Header Content (Centered) */
-#header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1; /* Allow this to expand and center the title */
-    text-align: center; /* Center-align the text */
+/* Center the title */
+#header-title {
+    position: absolute; /* Remove it from the Flexbox flow */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset by 50% of its own width */
+    text-align: center; /* Align text within */
+    font-size: 2.5em; /* Adjust title size */
+}
+
+/* Header Links */
+#header-links {
+    display: flex; /* Keep Flexbox for links */
+    gap: 15px; /* Add spacing between links */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Header Logo */
