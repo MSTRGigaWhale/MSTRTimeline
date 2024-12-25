@@ -144,21 +144,20 @@ header {
     border-bottom: 5px solid #D9232E; /* Ensures border is flush with the bottom */
 }
 
-
-/* Center the title */
+/* Header Title */
 #header-title {
-    position: absolute; /* Remove it from the Flexbox flow */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Offset by 50% of its own width */
-    text-align: center; /* Align text within */
-    font-size: 2.5em; /* Adjust title size */
+    font-size: 2.5em;
+    margin: 0;
+    flex-grow: 1; /* Allow title to expand and stay centered */
+    text-align: center; /* Center-align the text within */
 }
 
 /* Header Links */
 #header-links {
-    display: flex; /* Keep Flexbox for links */
+    display: flex; /* Enable Flexbox for the links */
     gap: 15px; /* Add spacing between links */
-    white-space: nowrap; /* Prevent wrapping */
+    margin-right: 0; /* Align links to the right without extra space */
+    white-space: nowrap; /* Prevent links from wrapping */
 }
 
 /* Header Logo */
