@@ -9,6 +9,44 @@ body {
     margin-top: 90px; /* Adjust for the fixed header */
 }
 
+/* Main Section Styling */
+main {
+    max-width: 800px; /* Restrict content width */
+    margin: 100px auto 40px; /* Center the main content and add spacing from the header */
+    padding: 20px; /* Add padding inside the content box */
+    background-color: #222; /* Background color for contrast */
+    color: #eee; /* Text color for readability */
+    border-radius: 10px; /* Rounded corners for the content box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+
+/* Content Box Styling */
+.content-box {
+    padding: 20px; /* Inner spacing for content */
+}
+
+/* About Me Section */
+#about-me {
+    text-align: center; /* Center align text for about me */
+}
+
+/* Legal Disclaimers Section */
+#legal-disclaimer-content {
+    text-align: justify; /* Justify text for legal disclaimers */
+}
+
+/* Headings in Content Box */
+.content-box h1, .content-box h2 {
+    color: #fff; /* Heading color */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Paragraphs in Content Box */
+.content-box p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -139,6 +177,19 @@ header h1 {
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
+/* Back to Timeline Link */
+#back-to-timeline {
+    color: #D9232E; /* Highlighted link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Adjust font size */
+    margin-bottom: 20px; /* Add space below the link */
+    display: inline-block; /* Make the link behave like a button */
+}
+
+#back-to-timeline:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #fff; /* Hover color */
+}
 
 #header-links a {
     color: #fff;
